@@ -1,0 +1,152 @@
+body {
+  background-color: #f0ecea;
+}
+
+.reminder {
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+  background-size: 100% 100%;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+h1 {
+  color: green;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500 bolder;
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p {
+  color: #404F5E;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size:16px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  background: #f0ecea;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  border-radius:200px;
+  height:130px;
+  width:130px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+i {
+  color: green;
+  font-size: 80px;
+  line-height: 60px;
+}
+
+.checkmark {
+  border-radius:400px;
+  height:40px;
+  width:40px;
+  background: transparent;
+}
+
+.pi {
+  color: green;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin: auto;
+  width: 100%;
+}
+
+.logo img {
+  margin-top: 20px;
+  padding-left: 50px;
+  top: 20px;
+  left: 82px;
+}
+
+.navbar-container>.menu {
+  margin-left: auto;
+  padding-left: 65px;
+  padding-right: 5%;
+  float: right;
+  width: 38%;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Raleway;
+  font-weight: 400;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-container>.menu>a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: #555;
+}
+
+.menu a.active {
+  background-color: rgba(172, 163, 148, 1);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    z-index: 2;
+  }
+  
+  .home-content {
+    z-index: 3;
+  }
+
+  .logo img {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navbar-container> .menu {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Raleway;
+    font-weight: 400;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    padding-right: auto;
+    width: auto;
+  }
+
+  .menu a.active {
+    padding: 10px;
+  }
+}

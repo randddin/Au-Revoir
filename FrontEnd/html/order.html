@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link href="../css/order.css" rel="stylesheet"/>
+</head>
+  <body>
+    <nav class="navbar-container">
+        <div class="logo">
+            <img src="../img/logo-website-1.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="order.html" class="active">Order</a>
+            <a href="ourteam.html">Our Team</a>
+        </div>
+    </nav>
+
+    <form method="post" id="orderForm">
+        <div class="row">
+            <div class="col-60">
+                <div class="personal-info">
+                    <div class="row">
+                        <div class="col-60"><br>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="required" for="id_first_name">First Name:</label> 
+                                    <input type="text" class="form-control" name="first_name" maxlength="30" id="id_first_name" placeholder="Ex: Roni Hidayat"
+                                      required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label class="required" for="id_last_name">Last Name:</label> 
+                                  <input type="text" class="form-control" name="last_name" maxlength="30" id="id_last_name" placeholder="Ex: Roni Hidayat"
+                                  required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="required" for="id_email">Email:</label> 
+                                      <input type="email" class="form-control" name="email" maxlength="254" id="id_email" placeholder="Ex: example@gmail.com"
+                                      required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="required" for="id_phone_number">Phone Number:</label> 
+                                    <input type="tel" class="form-control" name="phone_number" id="id_phone_number" inputmode="tel" pattern="[0-9()+-]*" maxlength="20" placeholder="Ex: 081298971527"
+                                    required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu atau tidak sesuai')" oninput="setCustomValidity('')">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label class="required" for="id_address">Address:</label> 
+                                    <textarea name="address" class="form-control" cols="10" rows="5" id="id_address" placeholder="Ex: Jl. Palm Indah No. 18, Jakarta Barat"
+                                      required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label class="required" for="id_country">Country:</label> 
+                                    <input type="text" class="form-control" name="country" maxlength="254" id="id_country" placeholder="Ex: Indonesia"
+                                    required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">                              
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="required" for="id_city">City:</label> 
+                                    <input type="text" class="form-control" name="city" maxlength="30" id="id_city" placeholder="Ex: Jakarta"
+                                    required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">                              
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="required" for="id_zip">ZIP Code:</label> 
+                                    <input type="number" class="form-control" name="zip" id="id_zip" placeholder="Ex: 13500"
+                                    required oninvalid="this.setCustomValidity('Data yang diisikan belum lengkap, silahkan lengkapi terlebih dahulu')" oninput="setCustomValidity('')">                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-40">
+                <div class="ordering-product">
+                    <div class="title">Product Order</div>
+                    <label class="required" for="id_product_ordered">Products:</label>
+                    <table class="table" id="itemsTable">
+                        <thead>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>
+                            <button class="btn btn-primary" onclick="addRow()">+</button>
+                        </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit" class= "button" onclick="return confirm('Apakah Anda yakin untuk menyimpan formulir ini?');">Checkout</button>
+                </div> <br><br>
+            </div>
+        </div>
+    </form>
+    <script src="../js/order.js"></script>
+</body>
+</html>

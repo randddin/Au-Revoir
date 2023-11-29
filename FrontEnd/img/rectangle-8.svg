@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width='1390' height='875' viewBox='0 0 1390 875' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<g filter='url(#filter0_d_121_155)'>
+<path d='M51 58.2075C51 54.2269 62.8289 51 77.4205 51H1312.58C1327.17 51 1339 54.2269 1339 58.2075V816.793C1339 820.773 1327.17 824 1312.58 824H77.4205C62.8289 824 51 820.773 51 816.793V58.2075Z' fill='#C8C8C8' fill-opacity='0.11' shape-rendering='crispEdges'/>
+<path d='M1312.58 50.5H77.4205C70.0934 50.5 63.4419 51.3096 58.6068 52.6286C56.1928 53.2872 54.2032 54.0802 52.8052 54.9818C51.4297 55.869 50.5 56.9476 50.5 58.2075V816.793C50.5 818.052 51.4297 819.131 52.8052 820.018C54.2032 820.92 56.1928 821.713 58.6068 822.371C63.4419 823.69 70.0934 824.5 77.4205 824.5H1312.58C1319.91 824.5 1326.56 823.69 1331.39 822.371C1333.81 821.713 1335.8 820.92 1337.19 820.018C1338.57 819.131 1339.5 818.052 1339.5 816.793V58.2075C1339.5 56.9476 1338.57 55.869 1337.19 54.9818C1335.8 54.0802 1333.81 53.2872 1331.39 52.6286C1326.56 51.3096 1319.91 50.5 1312.58 50.5Z' stroke='#BCBBBB' stroke-opacity='0.2' shape-rendering='crispEdges'/>
+</g>
+<defs>
+<filter id='filter0_d_121_155' x='0' y='0' width='1390' height='875' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
+<feFlood flood-opacity='0' result='BackgroundImageFix'/>
+<feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/>
+<feOffset/>
+<feGaussianBlur stdDeviation='25'/>
+<feComposite in2='hardAlpha' operator='out'/>
+<feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/>
+<feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_121_155'/>
+<feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_121_155' result='shape'/>
+</filter>
+</defs>
+</svg>
